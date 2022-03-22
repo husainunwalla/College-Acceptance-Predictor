@@ -1,0 +1,144 @@
+Id,School Name,Applicants,Admitted,Acceptance rate,Admission rate
+1,Stanford University,47498,2062,4.30%,95.7
+2,Pacific Oaks College,333,17,5.10%,94.9
+3,California Institute of Technology (Caltech),8367,537,6.40%,93.6
+4,Pomona College,10401,770,7.40%,92.6
+5,Claremont McKenna College,6066,625,10.30%,89.7
+6,University of Southern California (USC),66198,7558,11.40%,88.6
+7,University of California-Los Angeles (UCLA),111321,13720,12.30%,87.7
+8,The Chicago School of Professional Psychology at Los Angeles,207,27,13.00%,87.0
+9,Harvey Mudd College (HMC),4045,553,13.70%,86.3
+10,Pitzer College],4415,605,13.70%,86.3
+11,University of California-Berkeley (UC Berkeley),87397,14278,16.30%,83.7
+12,California Institute of the Arts (CalArts),2267,573,25.30%,74.7
+13,University of California-Irvine (UCI),95565,25360,26.50%,73.5
+14,California Polytechnic State University-San Luis Obispo (Cal Poly),54072,15366,28.40%,71.6
+15,University of California-Santa Barbara (UCSB),93446,27626,29.60%,70.4
+16,University of California-San Diego (UCSD),99114,31200,31.50%,68.5
+17,Pepperdine University],12764,4049,31.70%,68.3
+18,Scripps College,3022,967,32.00%,68.0
+19,San Diego State University (SDSU),70048,23905,34.10%,65.9
+20,Occidental College (OXY),7501,2752,36.70%,63.3
+21,Hope International University (Hope),685,252,36.80%,63.2
+22,University of California-Davis (UC Davis),78093,30358,38.90%,61.1
+23,California State University-Long Beach (CSULB),71355,28019,39.30%,60.7
+24,Soka University of America,504,202,40.10%,59.9
+25,Loyola Marymount University (LMU),18592,8150,43.80%,56.2
+26,San Francisco Conservatory of Music,475,226,47.60%,52.4
+27,California State University-Los Angeles (Cal State LA),33641,16084,47.80%,52.2
+28,University of San Diego (USD),13755,6697,48.70%,51.3
+29,Santa Clara University (SCU),16300,7958,48.80%,51.2
+30,Vanguard University of Southern California,3976,1966,49.40%,50.6
+31,University of California-Santa Cruz (UC Santa Cruz),55796,28629,51.30%,48.7
+32,Simpson University (Simpson College),648,339,52.30%,47.7
+33,California State University-Fullerton (CSUF),50105,26398,52.70%,47.3
+34,"Pacific Union College (PUC)
+One Angwin Ave",1658,884,53.30%,46.7
+35,"Charles R Drew University of Medicine and Science (CDU)
+1731 E 120th St",320,173,54.10%,45.9
+36,"California State Polytechnic University-Pomona (Cal Poly Pomona)
+3801 West Temple Avenue",39726,21687,54.60%,45.4
+37,"University of La Verne
+1950 Third St",6864,3763,54.80%,45.2
+38,"La Sierra University
+4500 Riverwalk Parkway",5399,2980,55.20%,44.8
+39,"Chapman University
+One University Dr.",14273,7943,55.70%,44.3
+40,"San Diego Christian College
+200 Riverview Parkway",329,184,55.90%,44.1
+41,"University of California-Riverside (UCR)
+900 University Ave",49515,27984,56.50%,43.5
+42,"Whittier College
+13406 E Philadelphia Street",7233,4131,57.10%,42.9
+43,"California State University-Fresno (Fresno State)
+5241 N Maple Ave",18123,10501,57.90%,42.1
+44,"California State University-Northridge (CSUN)
+18111 Nordhoff St",30661,18194,59.30%,40.7
+45,"California State University-San Marcos (CSUSM)
+333 S Twin Oaks Valley Rd",17349,10699,61.70%,38.3
+46,"Menlo College
+1000 El Camino Real",3039,1906,62.70%,37.3
+47,"Holy Names University
+3500 Mountain Blvd",2441,1544,63.30%,36.7
+48,"San Jose State University (SJSU)
+One Washington Square",35307,22446,63.60%,36.4
+49,"University of San Francisco (USF)
+2130 Fulton St",21867,14086,64.40%,35.6
+50,"Westmont College
+955 La Paz Rd",3074,1992,64.80%,35.2
+51,"William Jessup University (San Jose Christian College)
+2121 University Avenue",775,504,65.00%,35.0
+52,"University of the Pacific (UOP)
+3601 Pacific Ave",13096,8592,65.60%,34.4
+53,"Fresno Pacific University
+1717 S Chestnut Ave",964,637,66.10%,33.9
+54,"Woodbury University
+7500 Glenoaks Blvd",1907,1265,66.30%,33.7
+55,"The Master's College and Seminary
+21726 Placerita Canyon Road",660,443,67.10%,32.9
+56,"San Francisco State University (SFSU)
+1600 Holloway Ave",34629,23307,67.30%,32.7
+57,"Azusa Pacific University (APU)
+901 E Alosta",8190,5528,67.50%,32.5
+58,"California State University-San Bernardino (CSUSB)
+5500 University Parkway",16311,11183,68.60%,31.4
+59,"Biola University
+13800 Biola Ave",4216,2945,69.90%,30.1
+60,"Concordia University-Irvine (Concordia University Irvine)
+1530 Concordia West",3727,2639,70.80%,29.2
+61,"Art Center College of Design
+1700 Lida St",1015,719,70.80%,29.2
+62,"California Lutheran University (CLU)
+60 W Olsen Rd",6175,4410,71.40%,28.6
+63,"University of California-Merced (UCM)
+5200 North Lake Road",25424,18294,72.00%,28.0
+64,"California State University-Chico
+First and Normal Sts",25908,18740,72.30%,27.7
+65,"John Paul the Great Catholic University
+155 W. Grand Ave",350,255,72.90%,27.1
+66,"Point Loma Nazarene University (PLNU)
+3900 Lomaland Dr",3277,2414,73.70%,26.3
+67,"California State University-Monterey Bay (CSUMB)
+100 Campus Center",12327,9280,75.30%,24.7
+68,"Mills College
+5000 MacArthur Blvd",1064,807,75.80%,24.2
+69,"University of Redlands
+1200 E. Colton Ave",4621,3531,76.40%,23.6
+70,"California State University-East Bay (CSUEB)
+25800 Carlos Bee Blvd",16195,12338,76.20%,23.8
+71,"California Maritime Academy (CMA)
+200 Maritime Academy Dr",1421,1083,76.20%,23.8
+72,"California State University-Dominguez Hills (CSUDH)
+1000 E Victoria St",20864,16066,77.00%,23.0
+73,"Otis College of Art and Design (Otis Art Institute)
+9045 Lincoln Blvd",2442,1909,78.20%,21.8
+74,"California Baptist University (CBU)
+8432 Magnolia Ave",8241,6451,78.30%,21.7
+75,"Thomas Aquinas College
+10",204,161,78.90%,21.1
+76,"California State University-Bakersfield (CSUB)
+9001 Stockdale Hwy",12935,10440,80.70%,19.3
+77,"Laguna College of Art and Design
+2222 Laguna Canyon Rd",431,349,81.00%,19.0
+78,"Saint Marys College of California (SMC)
+1928 Saint Marys Road",6069,4916,81.00%,19.0
+79,"California State University-Sacramento (Sacramento State)
+6000 J St",27576,22685,82.30%,17.7
+80,"California College of the Arts (CCA)
+1111 Eighth Street",2578,2192,85.00%,15.0
+81,"California State University-Channel Islands (CI)
+One University Dr",11894,10204,85.80%,14.2
+82,"California State University-Stanislaus (CSU Stanislaus)
+One University Circle",8764,7825,89.30%,10.7
+83,"Mount St. Mary's College
+12001 Chalon Rd",2165,1941,89.70%,10.3
+84,"San Francisco Art Institute
+800 Chestnut St",269,243,90.30%,9.7
+85,"Sonoma State University (SSU)
+1801 E Cotati Ave",15094,13764,91.20%,8.8
+86,"Dominican University of California (DUofC)
+50 Acacia Ave",2033,1857,91.30%,8.7
+87,"Humboldt State University (HSU)
+1 Harpst Street",15178,13989,92.20%,7.8
+88,"Notre Dame de Namur University (NDNU)
+",1810,1809,99.90%,0.1
