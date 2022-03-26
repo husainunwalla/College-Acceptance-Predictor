@@ -34,14 +34,6 @@ users.append(User(id=3, username='Isha', password='password'))
 app = Flask(__name__) # initializing a flask app
 app.secret_key = 'somesecretkeythatonlyishouldknow'
 
-@app.before_request
-def before_request():
-    g.user = None
-
-    if 'user_id' in session:
-        user = [x for x in users if x.id == session['user_id']][0]
-        g.user = user
-
 @app.route('/login', methods=['GET', 'POST'])
 def login():
     if request.method == 'POST':
@@ -59,14 +51,16 @@ def login():
 
     return render_template('login.html')
 
+@app.route('/form', methods=['GET', 'POST'])
+def form():
+    return redirect(url_for('form'))
+
 @app.route('/',methods=['GET'])  # route to display the home page
 @cross_origin()
 def homePage():
-    return render_template("index.html")
-
-@app.route('/form')
-def form():
-    return redirect(url_for('form'))
+    #Husain - changed default route to login
+    #return render_template("index.html")
+    return redirect(url_for('login'))
 
 @app.route('/predict',methods=['POST','GET']) # route to show the predictions in a web UI
 @cross_origin()
@@ -90,7 +84,7 @@ def index():
             #print('predicted value is', prediction)
             # showing the prediction results in a UI
             output = round(prediction[0], 2)*100
-            return render_template('index.html', prediction_text='Admission chance is {}%'.format(output))
+            return render_template('form.html', prediction_text='Admission chance is {}%'.format(output))
             #return render_template('index.html',prediction_text=round(100*prediction[0]))
         
 if __name__ == "__main__":
