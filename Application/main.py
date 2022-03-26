@@ -1,4 +1,3 @@
-
 # importing the necessary dependencies
 #Husain - Added new import for addional functionality
 #from flask import Flask, render_template, request,jsonify
@@ -34,6 +33,14 @@ users.append(User(id=3, username='Isha', password='password'))
 app = Flask(__name__) # initializing a flask app
 app.secret_key = 'somesecretkeythatonlyishouldknow'
 
+@app.before_request
+def before_request():
+    g.user = None
+
+    if 'user_id' in session:
+        user = [x for x in users if x.id == session['user_id']][0]
+        g.user = user
+
 @app.route('/login', methods=['GET', 'POST'])
 def login():
     if request.method == 'POST':
@@ -45,7 +52,7 @@ def login():
         user = [x for x in users if x.username == username][0]
         if user and user.password == password:
             session['user_id'] = user.id
-            return render_template("form.html")
+            return redirect(url_for('form'))
 
         return redirect(url_for('login'))
 
@@ -53,7 +60,7 @@ def login():
 
 @app.route('/form', methods=['GET', 'POST'])
 def form():
-    return redirect(url_for('form'))
+    return render_template("form.html")
 
 @app.route('/',methods=['GET'])  # route to display the home page
 @cross_origin()
