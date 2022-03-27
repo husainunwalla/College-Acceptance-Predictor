@@ -1,16 +1,20 @@
-import pandas as pd
-import pickle 
+import pandas as pd 
 import os
+from os.path import dirname, abspath 
+from joblib import load
+
 
 def predict_all(gre_score, toefl_score,  sop, lor, cgpa, research):
-        df=pd.read_csv(r"uni_dataset.csv", usecols = ['School Name','Acceptance rate'])
+        this_folder = os.path.dirname(os.path.abspath(__file__))
+        parent_folder = dirname(dirname(abspath(__file__)))
+        uni_data_path = os.path.join(this_folder, 'uni_dataset.csv')
+        df=pd.read_csv(uni_data_path, usecols = ['School Name','Acceptance rate'])
         list_json = []
         i=0
 
-        this_folder = os.path.dirname(os.path.abspath(__file__))
-        filename = os.path.join(this_folder, 'finalized_model.pickle')
+        filename = os.path.join(parent_folder + '/Model' , 'filename.joblib')
         # loading the model file from the storage
-        loaded_model = pickle.load(open(filename, 'rb'))
+        loaded_model = load(filename) 
         university_rating = 1
         for index, row in df.iterrows():
                 i+= 1
@@ -39,7 +43,7 @@ def predict_all(gre_score, toefl_score,  sop, lor, cgpa, research):
                 prediction = loaded_model.predict([[gre_score, toefl_score, university_rating, sop, lor, cgpa, research]])
                 #print('predicted value is', prediction)
                 # showing the prediction results in a UI
-                output = round(prediction[0]*100, 2)
+                output = round(float(prediction[0]*100), 2)
                 if output > 100 : output = 99.99
                 temp_json['val'] = output
                 temp_json['rating'] = university_rating
