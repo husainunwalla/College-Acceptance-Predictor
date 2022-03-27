@@ -6,35 +6,31 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='styles/mainpage.css') }}">
+  <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='styles/form.css') }}">
+  <script type=text/javascript src="{{url_for('static', filename='js/script.js') }}"></script>
 </head>
 
 <body>
-
-  <div class="topnav">
-    <h1 id="heading">Acceptance Chance based on Merit and Personality</h1>
-  </div>
-
-
   <div class="container">
+    <h2 id="heading">Acceptance Chance based on Merit and Personality</h1>
     <div class="column_left">
       <form action="/predict" method="POST">
         <div class="form-group">
-          <label for="gre_score">GRE Score:</label>
+          <label  for="gre_score">GRE Score:</label>
           <input class="form-control" type="number" name="gre_score" id="gre_score" placeholder="eg: 302" min="260"
-            max="340">
+            max="340" required>
         </div>
 
         <div class="form-group">
           <label for="toefl_score">TOEFL Score:</label>
           <input class="form-control" type="number" name="toefl_score" id="toefl_score" placeholder="eg: 112" min="1"
-            max="120">
+            max="120" required>
         </div>
 
         <div class="form-group">
           <label for="university_rating">University Rating:</label>
           <input class="form-control" type="number" name="university_rating" id="university_rating" placeholder="eg: 4"
-            min="1" max="5">
+            min="1" max="5" required>
         </div>
 
         <div class="form-group">
@@ -50,7 +46,7 @@
         <div class="form-group">
           <label for="cgpa">CGPA:</label>
           <input class="form-control" type="number" name="cgpa" id="cgpa" placeholder="eg: 8.5" step="any" min="1"
-            max="10">
+            max="10" required>
         </div>
 
         <div class="form-group">
@@ -60,16 +56,8 @@
             <option value="no">No</option>
           </select><br>
         </div>
-
-        <div class="bottomnav">
-
           <input class="btn" type="submit" value="Predict">
           <div class="predict"> {{prediction_text}} </div>
-
-        </div>
-
-
-        <!--<h4 style="text-align: center;">{{prediction_text}}</h4> -->
       </form>
     </div>
 
@@ -80,7 +68,30 @@
 
   </div>
 
-
+<!-- 
+  <div class="contact-us">
+    <form action=" /predict" method="POST">
+      <input class="form-control" type="number" name="gre_score" id="gre_score" placeholder="eg: 302" min="260"
+        max="340">
+      <input class="form-control" type="number" name="toefl_score" id="toefl_score" placeholder="eg: 112" min="1"
+        max="120">
+      <input class="form-control" type="number" name="university_rating" id="university_rating" placeholder="eg: 4"
+        min="1" max="5">
+      <input class="form-control" type="number" name="sop" id="sop" placeholder="eg: 4" min="1" max="5">
+      <input class="form-control" type="number" name="lor" id="lor" placeholder="eg: 3" min="1" max="5">
+      <input class="form-control" type="number" name="cgpa" id="cgpa" placeholder="eg: 8.5" step="any" min="1" 
+      <div class="form-group">
+        <label for="research">Research: </label>
+        <select name="research" id="research" class="form-control" style="float: right;">
+          <option value="yes">Yes</option>
+          <option value="no">No</option>
+        </select><br>
+      </div>
+      <button type="button" value="Predict">SIGN UP</button>
+      <div class="predict"> {{prediction_text}} </div>
+  </div>
+  -->
 </body>
+
 
 </html>
