@@ -48,48 +48,53 @@
       </div>
       <div class="box-root padding-top--24 flex-flex flex-direction--column" style="flex-grow: 1; z-index: 9;">
         <div class="box-root padding-top--48 padding-bottom--24 flex-flex flex-justifyContent--center">
-          <h1><a href="http://blog.stackfindover.com/" rel="dofollow">Stackfindover</a></h1>
+          <h1><a href="http://blog.stackfindover.com/" rel="dofollow">HIJ CAP</a></h1>
         </div>
         <div class="formbg-outer">
           <div class="formbg">
             <div class="formbg-inner padding-horizontal--48">
               <span class="padding-bottom--15">Sign in to your account</span>
-              <form id="stripe-login" action="/predict" method="POST">
+
+              <form id="stripe-login" action="/predictAll" method="POST">
 
                 <div class="field padding-bottom--24">
                   <label for="gre_score">GRE Score:</label>
                   <input class="form-control" type="number" name="gre_score" id="gre_score" placeholder="eg: 302"
-                    min="260" max="340" required>
+                    min="260" max="340" value="317" required>
                 </div>
 
                 <div class="field padding-bottom--24">
                   <label for="toefl_score">TOEFL Score:</label>
                   <input class="form-control" type="number" name="toefl_score" id="toefl_score" placeholder="eg: 112"
-                    min="1" max="120" required>
+                    min="1" max="120" value="120" required>
                 </div>
 
-                <div class="field padding-bottom--24">
+                <!--
+                  <div class="field padding-bottom--24">
                   <label for="university_rating">University Rating:</label>
                   <input class="form-control" type="number" name="university_rating" id="university_rating"
                     placeholder="eg: 4" min="1" max="5" required>
                 </div>
+                -->
 
                 <div class="field padding-bottom--24">
                   <div class="form-group">
                     <label for="lor">LOR:</label>
-                    <input class="form-control" type="number" name="lor" id="lor" placeholder="eg: 3" min="1" max="5">
+                    <input class="form-control" type="number" name="lor" id="lor" placeholder="eg: 3" min="1" max="5"
+                      value="5" required>
                   </div>
                 </div>
 
                 <div class="field padding-bottom--24">
                   <label for="sop">SOP:</label>
-                  <input class="form-control" type="number" name="sop" id="sop" placeholder="eg: 4" min="1" max="5">
+                  <input class="form-control" type="number" name="sop" id="sop" placeholder="eg: 4" min="1" max="5"
+                    value="5" required>
                 </div>
 
                 <div class="field padding-bottom--24">
                   <label for="cgpa">CGPA:</label>
                   <input class="form-control" type="number" name="cgpa" id="cgpa" placeholder="eg: 8.5" step="any"
-                    min="1" max="10" required>
+                    min="1" max="10" value="8.84" required>
                 </div>
 
                 <div class="field padding-bottom--24">
@@ -101,7 +106,7 @@
                 </div>
 
                 <div class="field padding-bottom--24 padding-top--24">
-                  <input type="submit" name="submit" value="Predict">
+                  <input type="submit" name="submit" value="Predict All">
                 </div>
                 <div class="field">
                   <a class="ssolink" href="#">{{prediction_text}}</a>
@@ -110,7 +115,6 @@
             </div>
           </div>
           <div class="footer-link padding-top--24">
-            <span>Don't have an account? <a href="">Sign up</a></span>
             <div class="listing padding-top--24 padding-bottom--24 flex-flex center-center">
               <span><a href="#">© Stackfindover</a></span>
               <span><a href="#">Contact</a></span>
