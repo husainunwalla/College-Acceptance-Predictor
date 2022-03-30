@@ -23,13 +23,10 @@
                         <div class="box-root box-divider--light-all-2 animationLeftRight tans3s" style="flex-grow: 1;">
                         </div>
                     </div>
-                    <div class="box-root flex-flex" style="grid-area: 6 / start / auto / 2;">
-                        <div class="box-root box-background--blue800" style="flex-grow: 1;"></div>
-                    </div>
-                    <div class="box-root flex-flex" style="grid-area: 7 / start / auto / 4;">
+                    <div class="box-root flex-flex" style="grid-area: 6 / start / auto / 4;">
                         <div class="box-root box-background--blue animationLeftRight" style="flex-grow: 1;"></div>
                     </div>
-                    <div class="box-root flex-flex" style="grid-area: 8 / 4 / auto / 6;">
+                    <div class="box-root flex-flex" style="grid-area: 7 / 4 / auto / 6;">
                         <div class="box-root box-background--gray100 animationLeftRight tans3s" style="flex-grow: 1;">
                         </div>
                     </div>
@@ -54,34 +51,19 @@
                 <div class="box-root padding-top--48 padding-bottom--24 flex-flex flex-justifyContent--center">
                     <h1><a href="http://blog.stackfindover.com/" rel="dofollow">HIJ CAP</a></h1>
                 </div>
-                <div class="formbg-outer">
-                    <div class="formbg">
-                        <div class="formbg-inner padding-horizontal--48">
-                            <span class="padding-bottom--15">Your predictions</span>
-                            <h1>{{ title }}</h1>
-                            <hr>
-                            {% block content %}{% endblock %}
-                        </div>
-                        <script type="text/javascript" charset="utf8"
-                            src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-                        <script type="text/javascript" charset="utf8"
-                            src="https://cdn.datatables.net/1.10.25/js/jquery.dataTables.js"></script>
-                        <script type="text/javascript" charset="utf8"
-                            src="https://cdn.datatables.net/1.10.25/js/dataTables.bootstrap5.js"></script>
-                        {% block scripts %}
-                        <script>
-                            $(document).ready(function () {
-                                $('#data').DataTable({
-                                    columns: [
-                                        { orderable: true, searchable: true },
-                                        { orderable: true, searchable: false },
-                                    ],
-                                });
-                            });
-                        </script>
-                        {% endblock %}
-                    </div>
-                </div>
+                {% block content %}{% endblock %}
+                {% block scripts %}
+                <script>
+                    $(document).ready(function () {
+                        $('#data').DataTable({
+                            columns: [
+                                { orderable: true, searchable: true },
+                                { orderable: true, searchable: false },
+                            ],
+                        });
+                    });
+                </script>
+                {% endblock %}
             </div>
         </div>
     </div>
