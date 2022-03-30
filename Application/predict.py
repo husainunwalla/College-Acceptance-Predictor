@@ -25,17 +25,15 @@ def predict_all(gre_score, toefl_score,  sop, lor, cgpa, research):
                 temp_json['name'] = row[0]
 
                 '''if(row[1] < 5):
-                        university_rating = -20
-                elif(row[1] < 1):
-                        university_rating = 1
+                        university_rating = 5
                 elif(row[1] < 20):
-                        university_rating = 2
+                        university_rating = 4
                 elif(row[1] < 40):
                         university_rating = 3
                 elif(row[1] < 60):
-                        university_rating = 4
+                        university_rating = 2
                 else:
-                        university_rating = 5'''
+                        university_rating = 1'''
                 university_rating = int(row[1])
                 
 
@@ -43,8 +41,9 @@ def predict_all(gre_score, toefl_score,  sop, lor, cgpa, research):
                 prediction = loaded_model.predict([[gre_score, toefl_score, university_rating, sop, lor, cgpa, research]])
                 #print('predicted value is', prediction)
                 # showing the prediction results in a UI
-                output = round(float(prediction[0]*100), 2)
-                if output > 100 : output = 99.99
+                output = round(float(prediction[0]*100) , 2)
+                if output>=100 : output = 99.99
+                if output <= 0 : output = 0.01
                 temp_json['val'] = output
                 temp_json['rating'] = university_rating
                 list_json.append(temp_json)
