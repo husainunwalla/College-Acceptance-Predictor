@@ -1,0 +1,19 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="formbg-outer">
+    <div class="formbg" style="width: 100%;max-width: 448px;">
+        <div class="formbg-inner padding-horizontal--48">
+            <span class="padding-bottom--15">Fill out these questions to get your personality type</span>
+            <form id="data-form" action="" method="POST">
+                {% for que in ques %}
+                <div class="field padding-bottom--24">
+                    <label for={{que.id}}>{{que.label}}</label>
+                    <input class="form-control" type="text" name={{que.id}} id={{que.id}} placeholder="" min="260"
+                        required>
+                </div>
+                {% endfor %}
+            </form>
+        </div>
+    </div>
+</div>
+{% endblock %}
