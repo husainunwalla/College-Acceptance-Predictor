@@ -10,35 +10,10 @@ from flask import (
 )
 from flask_cors import CORS, cross_origin
 import predict
-from dynamic.dataUtility import University
-# Husain - class to store user type data
-class University:
-    def __init__(self, name, val):
-        self.name = name
-        self.val = val
-class User:
-    def __init__(self, id, username, password):
-        self.id = id
-        self.username = username
-        self.password = password
+from dynamic.utility import University, User, PersonalityQuestions
 
-    def __repr__(self):
-        return f'<User: {self.username}>'
-
-class PersonalityQuestions():
-    def __init__(self, id, label):
-        self.id = id
-        self.label = label
-
-#Husain create questions
-ques = []
-ques.append(PersonalityQuestions(id='ques_1', label='Question 1'))
-
-# Husain = create usersnames and passwords that will work during login
-users = []
-users.append(User(id=1, username='Husain', password='password'))
-users.append(User(id=2, username='Jainam', password='password'))
-users.append(User(id=3, username='Isha', password='password'))
+questions = PersonalityQuestions.get_questions();
+users = User.get_users();
 
 # Jainam : initializing a flask app
 app = Flask(__name__)
@@ -60,17 +35,13 @@ def before_request():
 def login():
     if request.method == 'POST':
         session.pop('user_id', None)
-
         username = request.form['username']
         password = request.form['password']
-
         user = [x for x in users if x.username == username][0]
         if user and user.password == password:
             session['user_id'] = user.id
             return redirect(url_for('home'))
-
         return redirect(url_for('login'))
-
     return render_template('login.html')
 
 #Page route to Home
@@ -86,7 +57,7 @@ def home():
 #Husain : Page Route to Personality
 @app.route('/personality' , methods = ['GET', 'POST'])
 def personality():
-    return render_template("personality.html" , ques = ques)
+    return render_template("personality.html" , ques = questions)
 
 # Husain : Page route to form page
 @app.route('/form', methods=['GET', 'POST'])
