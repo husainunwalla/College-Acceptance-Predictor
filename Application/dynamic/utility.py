@@ -1,3 +1,4 @@
+import os
 class University:
     def __init__(self, name, val):
         self.name = name
@@ -25,3 +26,6 @@ class PersonalityQuestions():
         questions = []
         questions.append(PersonalityQuestions(id='ques_1', label='Question 1'))
         return questions
+
+def generate_secret_key():
+    return os.urandom(16)

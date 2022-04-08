@@ -10,7 +10,7 @@ from flask import (
 )
 from flask_cors import CORS, cross_origin
 import predict
-from dynamic.utility import University, User, PersonalityQuestions
+from dynamic.utility import University, User, PersonalityQuestions, generate_secret_key
 
 questions = PersonalityQuestions.get_questions();
 users = User.get_users();
@@ -19,7 +19,7 @@ users = User.get_users();
 app = Flask(__name__)
 
 # Husain : Setting random secret key to store in session cookies
-app.secret_key = 'somesecretkeythatonlyishouldknow'
+app.secret_key = generate_secret_key()
 
 # Husain : Used to show information on page after login
 @app.before_request
