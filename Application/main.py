@@ -10,6 +10,7 @@ from flask import (
 )
 from flask_cors import CORS, cross_origin
 import predict
+from dynamic.dataUtility import University
 # Husain - class to store user type data
 class University:
     def __init__(self, name, val):
