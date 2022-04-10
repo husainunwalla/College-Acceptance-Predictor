@@ -8,7 +8,7 @@ from flask import (
     url_for,
     jsonify
 )
-from flask_cors import CORS, cross_origin
+from flask_cors import  cross_origin
 import predict
 from dynamic.utility import University, User, PersonalityQuestions, generate_secret_key
 
