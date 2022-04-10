@@ -38,7 +38,7 @@ def predict_all(gre_score, toefl_score,  sop, lor, cgpa, research):
                 
 
                 # predictions using the loaded model file
-                prediction = loaded_model.predict([[gre_score, toefl_score, university_rating, sop, lor, cgpa, research]])
+                prediction = loaded_model.predict([[gre_score, toefl_score, university_rating, cgpa, research]])
                 #print('predicted value is', prediction)
                 # showing the prediction results in a UI
                 output = round(float(prediction[0]*100) , 2)
