@@ -109,8 +109,8 @@ a {
 .formbg {
   margin: 0px auto;
   width: 90%;
-  background: rgba(255, 255, 255, 0.503);
-  backdrop-filter: blur(50px);
+  background: rgba(255, 255, 255, 0.5);
+  backdrop-filter: blur(75px);
   border-radius: 4px;
   box-shadow: rgba(60, 66, 87, 0.12) 0px 7px 14px 0px,
     rgba(0, 0, 0, 0.12) 0px 3px 6px 0px;
