@@ -27,6 +27,25 @@ class PersonalityQuestions():
     def get_questions():
         questions = []
         questions.append(PersonalityQuestions(id='ques_1', label='Question 1', option1='expend energy, enjoy groups', option2='conserve energy, enjoy one-on-one'))
+        questions.append(PersonalityQuestions(id='ques_2', label='Question 1', option1='expend energy, enjoy groups', option2='conserve energy, enjoy one-on-one'))
+        questions.append(PersonalityQuestions(id='ques_3', label='Question 1', option1='expend energy, enjoy groups', option2='conserve energy, enjoy one-on-one'))
+        questions.append(PersonalityQuestions(id='ques_4', label='Question 1', option1='expend energy, enjoy groups', option2='conserve energy, enjoy one-on-one'))
+        questions.append(PersonalityQuestions(id='ques_5', label='Question 1', option1='expend energy, enjoy groups', option2='conserve energy, enjoy one-on-one'))
+        questions.append(PersonalityQuestions(id='ques_6', label='Question 1', option1='expend energy, enjoy groups', option2='conserve energy, enjoy one-on-one'))
+        questions.append(PersonalityQuestions(id='ques_7', label='Question 1', option1='expend energy, enjoy groups', option2='conserve energy, enjoy one-on-one'))
+        questions.append(PersonalityQuestions(id='ques_8', label='Question 1', option1='expend energy, enjoy groups', option2='conserve energy, enjoy one-on-one'))
+        questions.append(PersonalityQuestions(id='ques_9', label='Question 1', option1='expend energy, enjoy groups', option2='conserve energy, enjoy one-on-one'))
+        questions.append(PersonalityQuestions(id='ques_10', label='Question 1', option1='expend energy, enjoy groups', option2='conserve energy, enjoy one-on-one'))
+        questions.append(PersonalityQuestions(id='ques_11', label='Question 1', option1='expend energy, enjoy groups', option2='conserve energy, enjoy one-on-one'))
+        questions.append(PersonalityQuestions(id='ques_12', label='Question 1', option1='expend energy, enjoy groups', option2='conserve energy, enjoy one-on-one'))
+        questions.append(PersonalityQuestions(id='ques_13', label='Question 1', option1='expend energy, enjoy groups', option2='conserve energy, enjoy one-on-one'))
+        questions.append(PersonalityQuestions(id='ques_14', label='Question 1', option1='expend energy, enjoy groups', option2='conserve energy, enjoy one-on-one'))
+        questions.append(PersonalityQuestions(id='ques_15', label='Question 1', option1='expend energy, enjoy groups', option2='conserve energy, enjoy one-on-one'))
+        questions.append(PersonalityQuestions(id='ques_16', label='Question 1', option1='expend energy, enjoy groups', option2='conserve energy, enjoy one-on-one'))
+        questions.append(PersonalityQuestions(id='ques_17', label='Question 1', option1='expend energy, enjoy groups', option2='conserve energy, enjoy one-on-one'))
+        questions.append(PersonalityQuestions(id='ques_18', label='Question 1', option1='expend energy, enjoy groups', option2='conserve energy, enjoy one-on-one'))
+        questions.append(PersonalityQuestions(id='ques_19', label='Question 1', option1='expend energy, enjoy groups', option2='conserve energy, enjoy one-on-one'))
+        questions.append(PersonalityQuestions(id='ques_20', label='Question 1', option1='expend energy, enjoy groups', option2='conserve energy, enjoy one-on-one'))
         return questions
 
 def generate_secret_key():

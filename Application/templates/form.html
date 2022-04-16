@@ -4,7 +4,7 @@
 <div class="formbg-outer">
   <div class="formbg" style="width: 100%;max-width: 448px;">
     <div class="formbg-inner padding-horizontal--48">
-      <span class="padding-bottom--15">Sign in to your account</span>
+      <span class="padding-bottom--15">Your Personality is {{g.user.personality}}</span>
 
       <form id="data-form" action="/predictAll" method="POST">
 
@@ -46,6 +46,12 @@
             <option value="yes">Yes</option>
             <option value="no">No</option>
           </select><br>
+        </div>
+
+        <div class="field padding-bottom--24">
+          <label for="gre_score">Personality</label>
+          <input class="form-control" type="text" name="personality" id="personality" value="{{my_personality}}"
+            required readonly>
         </div>
 
         <div class="field padding-bottom--24 padding-top--24">
