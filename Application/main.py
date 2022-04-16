@@ -93,6 +93,13 @@ def predict_all():
     print(type(unis))
     return render_template("table.html", unis = unis)
 
+#Husain : personality predict
+@app.route('/predictPersonality', methods=['POST'])
+def predict_personality():
+    q = request.form['ques_1']
+    print(q)
+    return render_template("form.html")
+
 if __name__ == "__main__":
     #app.run(host='127.0.0.1', port=8001)
     app.config["TEMPLATES_AUTO_RELOAD"] = True

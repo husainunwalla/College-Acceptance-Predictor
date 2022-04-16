@@ -4,16 +4,22 @@
     <div class="formbg" style="width: 100%;max-width: 448px;">
         <div class="formbg-inner padding-horizontal--48">
             <span class="padding-bottom--15">Fill out these questions to get your personality type</span>
-            <form id="data-form" action="" method="POST">
+            <form id="data-form" action="/predictPersonality" method="POST">
                 {% for que in ques %}
                 <div class="field padding-bottom--24">
                     <label for={{que.id}}>{{que.label}}</label>
-                    <input class="form-control" type="text" name={{que.id}} id={{que.id}} placeholder="" min="260"
-                        required>
+                    <select name={{que.id}} id="{{que.id}}" class="form-control" style="float: right;">
+                        <option value="A">{{que.option1}}</option>
+                        <option value="B">{{que.option2}}</option>
+                    </select><br>
                 </div>
-                {% endfor %}
-            </form>
+
+                <div class="field padding-bottom--24 padding-top--24">
+                    <input type="submit" name="submit" value="Predict All">
+                </div>
         </div>
+        {% endfor %}
+        </form>
     </div>
 </div>
 {% endblock %}
