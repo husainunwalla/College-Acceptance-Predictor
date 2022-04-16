@@ -82,6 +82,7 @@ def predict_all():
     lor = float(request.form['lor'])
     cgpa = float(request.form['cgpa'])
     is_research = request.form['research']
+    personality = request.form['personality']
     if(is_research == 'yes'):
         research = 1
     else:
@@ -91,7 +92,7 @@ def predict_all():
     for x in predicted:
         unis.append(University(x['name'], x['val']))
     print(type(unis))
-    return render_template("table.html", unis = unis)
+    return render_template("table.html", unis = unis, personality = personality)
 
 #Husain : personality predict
 @app.route('/predictPersonality', methods=['POST'])
