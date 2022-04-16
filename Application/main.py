@@ -11,6 +11,7 @@ from flask import (
 from flask_cors import  cross_origin
 import predict
 from dynamic.utility import University, User, PersonalityQuestions, generate_secret_key
+from dynamic.personality import find_personality
 
 questions = PersonalityQuestions.get_questions();
 users = User.get_users();
@@ -20,12 +21,10 @@ app = Flask(__name__)
 
 # Husain : Setting random secret key to store in session cookies
 app.secret_key = generate_secret_key()
-
 # Husain : Used to show information on page after login
 @app.before_request
 def before_request():
     g.user = None
-
     if 'user_id' in session:
         user = [x for x in users if x.id == session['user_id']][0]
         g.user = user
@@ -49,7 +48,7 @@ def login():
 def home():
     if request.method == 'POST':
         if request.form['Form'] == 'Go to Form':
-            return redirect(url_for('form'))
+            return redirect(url_for('form', personality = "All"))
         if request.form['Form'] == 'Go to Personality test':
             return redirect(url_for('personality'))
     return render_template("home.html")
@@ -62,7 +61,8 @@ def personality():
 # Husain : Page route to form page
 @app.route('/form', methods=['GET', 'POST'])
 def form():
-    return render_template("form.html")
+    personality = request.args['personality']
+    return render_template("form.html", my_personality = personality)
 
 # Husain : Page route to home page
 @app.route('/', methods=['GET'])  # route to display the home page
@@ -96,9 +96,13 @@ def predict_all():
 #Husain : personality predict
 @app.route('/predictPersonality', methods=['POST'])
 def predict_personality():
-    q = request.form['ques_1']
-    print(q)
-    return render_template("form.html")
+    answers = []
+    if request.method == 'POST':
+        for question in questions:
+            answers.append(request.form.get(question.id))
+        personality_type = find_personality(answers)
+        global current_personality
+    return redirect(url_for('form', personality = personality_type))
 
 if __name__ == "__main__":
     #app.run(host='127.0.0.1', port=8001)
