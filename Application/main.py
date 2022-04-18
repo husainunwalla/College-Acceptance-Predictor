@@ -1,3 +1,4 @@
+from colorama import init
 from flask import (
     Flask,
     g,
@@ -10,7 +11,8 @@ from flask import (
 )
 from flask_cors import  cross_origin
 import predict
-from dynamic.utility import University, User, PersonalityQuestions, generate_secret_key
+import dynamic.utility as utility
+from dynamic.utility import University, User, PersonalityQuestions, generate_secret_key, init_global_variables
 from dynamic.personality import find_personality
 
 questions = PersonalityQuestions.get_questions();
@@ -42,7 +44,7 @@ def login():
 def home():
     if request.method == 'POST':
         if request.form['Form'] == 'Go to Form':
-            return redirect(url_for('form', personality = "All"))
+            return redirect(url_for('form', personality = utility.default_personality_type))
         if request.form['Form'] == 'Go to Personality test':
             return redirect(url_for('personality'))
     return render_template("home.html")
@@ -65,8 +67,6 @@ def homePage():
 def predict_all():
     gre_score = int(request.form['gre_score'])
     toefl_score = float(request.form['toefl_score'])
-    sop = float(request.form['sop'])
-    lor = float(request.form['lor'])
     cgpa = float(request.form['cgpa'])
     is_research = request.form['research']
     personality = request.form['personality']
@@ -74,10 +74,10 @@ def predict_all():
         research = 1
     else:
         research = 0
-    predicted = (predict.predict_all(gre_score, toefl_score, sop, lor, cgpa, research))
+    predicted = (predict.predict_all(gre_score, toefl_score,personality, cgpa, research))
     unis = []
     for x in predicted:
-        unis.append(University(x['name'], x['val']))
+        unis.append(University(x['name'], x['val'], x['personality']))
     print(type(unis))
     return render_template("table.html", unis = unis, personality = personality)
 
@@ -92,6 +92,6 @@ def predict_personality():
     return redirect(url_for('form', personality = personality_type))
 
 if __name__ == "__main__":
-    #app.run(host='127.0.0.1', port=8001)
+    init_global_variables()
     app.config["TEMPLATES_AUTO_RELOAD"] = True
     app.run(debug=True)

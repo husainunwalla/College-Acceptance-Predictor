@@ -1,8 +1,11 @@
 import os
+
+from sympy import per
 class University:
-    def __init__(self, name, val):
+    def __init__(self, name, val, personality):
         self.name = name
         self.val = val
+        self.personality = personality
 
 class User:
     def __init__(self, id, username, password):
@@ -50,3 +53,7 @@ class PersonalityQuestions():
 
 def generate_secret_key():
     return os.urandom(16)
+
+def init_global_variables():
+    global default_personality_type
+    default_personality_type = 'All'
