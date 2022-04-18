@@ -15,13 +15,9 @@ from dynamic.personality import find_personality
 
 questions = PersonalityQuestions.get_questions();
 users = User.get_users();
-
-# Jainam : initializing a flask app
 app = Flask(__name__)
-
-# Husain : Setting random secret key to store in session cookies
 app.secret_key = generate_secret_key()
-# Husain : Used to show information on page after login
+
 @app.before_request
 def before_request():
     g.user = None
@@ -29,7 +25,6 @@ def before_request():
         user = [x for x in users if x.id == session['user_id']][0]
         g.user = user
 
-# Husain : Page route to login page
 @app.route('/login', methods=['GET', 'POST'])
 def login():
     if request.method == 'POST':
@@ -43,7 +38,6 @@ def login():
         return redirect(url_for('login'))
     return render_template('login.html')
 
-#Page route to Home
 @app.route('/home', methods = ['GET', 'POST'])
 def home():
     if request.method == 'POST':
@@ -53,31 +47,24 @@ def home():
             return redirect(url_for('personality'))
     return render_template("home.html")
 
-#Husain : Page Route to Personality
 @app.route('/personality' , methods = ['GET', 'POST'])
 def personality():
     return render_template("personality.html" , ques = questions)
 
-# Husain : Page route to form page
 @app.route('/form', methods=['GET', 'POST'])
 def form():
     personality = request.args['personality']
     return render_template("form.html", my_personality = personality)
 
-# Husain : Page route to home page
-@app.route('/', methods=['GET'])  # route to display the home page
+@app.route('/', methods=['GET'])
 @cross_origin()
 def homePage():
-    # Husain - changed default route to login
-    # return render_template("index.html")
     return redirect(url_for('login'))
 
-#Husain : new predict method
 @app.route('/predictAll', methods=['POST', 'GET'])
 def predict_all():
     gre_score = int(request.form['gre_score'])
     toefl_score = float(request.form['toefl_score'])
-    #university_rating = int(request.form['university_rating'])
     sop = float(request.form['sop'])
     lor = float(request.form['lor'])
     cgpa = float(request.form['cgpa'])
@@ -94,7 +81,6 @@ def predict_all():
     print(type(unis))
     return render_template("table.html", unis = unis, personality = personality)
 
-#Husain : personality predict
 @app.route('/predictPersonality', methods=['POST'])
 def predict_personality():
     answers = []
