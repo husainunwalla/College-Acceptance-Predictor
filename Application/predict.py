@@ -1,8 +1,10 @@
+from itsdangerous import json
 import pandas as pd 
 import os
 from os.path import dirname, abspath 
 from joblib import load
 import dynamic.utility as utility
+import json
 
 
 def predict_all(gre_score, toefl_score, personality ,cgpa, research):
@@ -16,7 +18,7 @@ def predict_all(gre_score, toefl_score, personality ,cgpa, research):
         loaded_model = load(filename) 
         university_rating = 1
         for index, row in df.iterrows():
-                if personality != row[2] and personality!=utility.default_personality_type : continue
+                #if personality != row[2] and personality!=utility.default_personality_type : continue
                 current_uni = {}
                 current_uni['name'] = row[0]
                 university_rating = int(row[1])
