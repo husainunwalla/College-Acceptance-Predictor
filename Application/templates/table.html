@@ -5,11 +5,9 @@
     <div class="formbg">
         <div class="formbg-inner padding-horizontal--48">
             <span class="padding-bottom--15">Your predictions for {{personality}} personality type(s)</span>
-            <form id="table" action="/form?personality=All" method="POST">
-                <div class="field padding-bottom--24 padding-top--24" style="width: fit-content;">
-                    <input type="submit" name="submit" value="Get For All Personalities" id="Button">
-                </div>
-            </form>
+            <div class="field padding-bottom--24">
+                <button id="all">Show for All Personalities</button>
+            </div>
             <h1>{{ title }}</h1>
             <hr>
             <table id="data" class="table table-striped">
@@ -22,7 +20,7 @@
                 </thead>
                 <tbody>
                     {% for uni in unis %}
-                    <tr>
+                    <tr class="{{uni.personality}}">
                         <td>{{ uni.name }}</td>
                         <td>{{ uni.val }}</td>
                         <td>{{ uni.personality }}</td>
@@ -37,8 +35,12 @@
         <script type="text/javascript" charset="utf8"
             src="https://cdn.datatables.net/1.10.25/js/dataTables.bootstrap5.js"></script>
         <script>
+            var all_rows;
+            var uni_chance_table;
+            var row_to_keep;
+            var show_all = false;
             $(document).ready(function () {
-                $('#data').DataTable({
+                uni_chance_table = $('#data').DataTable({
                     columns: [
                         { orderable: true, searchable: true },
                         { orderable: true, searchable: false },
@@ -47,6 +49,27 @@
                 });
                 if ('{{personality}}' == "All") {
                     $('#Button').prop('disabled', true).css({ "background-color": "#F5F5F5", "color": "#C3C3C3", "box-shadow": "none" });
+                }
+                all_rows = uni_chance_table.rows().data();
+                if ('{{personality}}' != 'All') {
+                    row_to_keep = uni_chance_table.rows('.' + '{{personality}}').data();
+                    uni_chance_table.rows().remove();
+                    uni_chance_table.rows.add(row_to_keep).draw();
+                } else {
+                    $('#all').hide();
+                }
+            });
+            $('#all').click(function () {
+                if (!show_all) {
+                    uni_chance_table.rows().remove();
+                    uni_chance_table.rows.add(all_rows).draw();
+                    show_all = true;
+                    $(this).text('Show only My Personality');
+                } else {
+                    uni_chance_table.rows().remove();
+                    uni_chance_table.rows.add(row_to_keep).draw();
+                    show_all = false;
+                    $(this).text('Show for All Personalities');
                 }
             });
         </script>
