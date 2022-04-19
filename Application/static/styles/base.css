@@ -94,6 +94,9 @@ a {
 .padding-bottom--24 {
   padding-bottom: 24px;
 }
+.padding-bottom--48 {
+  padding-bottom: 48px;
+}
 .padding-horizontal--48 {
   padding: 48px;
 }
@@ -229,18 +232,24 @@ a.ssolink {
   font-weight: 600;
   margin: 0 10px;
 }
-
+.modal-backdrop {
+  background: rgba(255, 255, 255, 0.5);
+  backdrop-filter: blur(10px);
+}
+.modal-backdrop.in{
+  opacity: 1 !important;
+}
 .animationRightLeft {
-  animation: animationRightLeft 4s ease-in-out infinite;
+  animation: animationRightLeft 10s ease-in-out infinite;
 }
 .animationLeftRight {
-  animation: animationLeftRight 4s ease-in-out infinite;
+  animation: animationLeftRight 10s ease-in-out infinite;
 }
 .tans3s {
-  animation: animationLeftRight 3s ease-in-out infinite;
+  animation: animationLeftRight 10s ease-in-out infinite;
 }
 .tans4s {
-  animation: animationLeftRight 4s ease-in-out infinite;
+  animation: animationLeftRight 10s ease-in-out infinite;
 }
 
 @keyframes animationLeftRight {

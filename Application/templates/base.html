@@ -6,11 +6,35 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.25/css/dataTables.bootstrap5.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='styles/base.css') }}">
     <script src="{{url_for('static', filename='js/script.js')}}"></script>
 </head>
 
 <body>
+
+    <!-- Modal -->
+    <div class="modal fade" id="myModal" role="dialog">
+        <div class="modal-dialog">
+
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title">Your Personality is :</h4>
+                </div>
+                <div class="modal-body">
+                    <div class="box-root padding-top--24 padding-bottom--24 flex-flex flex-justifyContent--center">
+                        <h1>{{my_personality}}</h1>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
     <div class="login-root">
         <div class="box-root flex-flex flex-direction--column" style="min-height: 100vh;flex-grow: 1;">
             <div class="loginbackground box-background--white padding-top--64">
@@ -49,8 +73,8 @@
                 </div>
             </div>
             <div class="box-root padding-top--24 flex-flex flex-direction--column" style="flex-grow: 1; z-index: 9;">
-                <div class="box-root padding-top--48 padding-bottom--24 flex-flex flex-justifyContent--center">
-                    <h1><a rel="dofollow">HIJ CAP</a></h1>
+                <div class="box-root padding-top--24 padding-bottom--48 flex-flex flex-justifyContent--center">
+                    <h1>Polaris</h1>
                 </div>
                 {% block content %}{% endblock %}
                 {% block scripts %}
