@@ -17,6 +17,26 @@ personalityDict = {
   "ENTJ" : "Commander"
 }
 
+new_personalityDict = {
+"Inspector" : "Nerd",
+"Mediator" : "Nerd",
+"Director": "Nerd",
+"Commander" : "Nerd",
+"Champion": "Pragmatic",
+"Advocate" : "Pragmatic",
+"Persuader": "Pragmatic",
+"Debater": "Pragmatic",
+"Thinker" : "Pragmatic",
+"Giver": "Humanitarian",
+"Protector": "Humanitarian", 
+"Caregiver": "Humanitarian",
+"Artist" : "Artistic",
+"Architect" : "Artistic",
+"Performer": "Artistic",
+"Crafter": "Artistic"
+}
+
+
 def find_personality(answers):
     countOfA: int = 0
     countOfB: int = 0
@@ -61,6 +81,6 @@ def find_personality(answers):
                     personalityType = personalityType + 'P'
 
     if personalityType in personalityDict :
-        return personalityDict[personalityType]
+        return new_personalityDict[personalityDict[personalityType]]
     
     return "All questions not answered properly"
