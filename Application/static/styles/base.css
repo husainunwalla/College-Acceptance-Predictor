@@ -231,10 +231,10 @@ a.ssolink {
 }
 
 .animationRightLeft {
-  animation: animationRightLeft 2s ease-in-out infinite;
+  animation: animationRightLeft 4s ease-in-out infinite;
 }
 .animationLeftRight {
-  animation: animationLeftRight 2s ease-in-out infinite;
+  animation: animationLeftRight 4s ease-in-out infinite;
 }
 .tans3s {
   animation: animationLeftRight 3s ease-in-out infinite;

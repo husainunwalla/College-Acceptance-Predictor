@@ -1,144 +1,89 @@
 Id,School Name,Applicants,Admitted,Acceptance rate,Admission rate,Personality
-1,Stanford University,47498,2062,4.3,95.7,Artist
-2,Pacific Oaks College,333,17,5.1,94.9,Persuader
-3,California Institute of Technology (Caltech),8367,537,6.4,93.6,Giver
-4,Pomona College,10401,770,7.4,92.6,Caregiver
-5,Claremont McKenna College,6066,625,10.3,89.7,Champion
-6,University of Southern California (USC),66198,7558,11.4,88.6,Champion
-7,University of California-Los Angeles (UCLA),111321,13720,12.3,87.7,Champion
-8,The Chicago School of Professional Psychology at Los Angeles,207,27,13,87,Protector
-9,Harvey Mudd College (HMC),4045,553,13.7,86.3,Director
-10,Pitzer College],4415,605,13.7,86.3,Champion
-11,University of California-Berkeley (UC Berkeley),87397,14278,16.3,83.7,Persuader
-12,California Institute of the Arts (CalArts),2267,573,25.3,74.7,Architect
-13,University of California-Irvine (UCI),95565,25360,26.5,73.5,Advocate
-14,California Polytechnic State University-San Luis Obispo (Cal Poly),54072,15366,28.4,71.6,Advocate
-15,University of California-Santa Barbara (UCSB),93446,27626,29.6,70.4,Advocate
-16,University of California-San Diego (UCSD),99114,31200,31.5,68.5,Debater
-17,Pepperdine University],12764,4049,31.7,68.3,Crafter
-18,Scripps College,3022,967,32,68,Giver
-19,San Diego State University (SDSU),70048,23905,34.1,65.9,Protector
-20,Occidental College (OXY),7501,2752,36.7,63.3,Commander
-21,Hope International University (Hope),685,252,36.8,63.2,Thinker
-22,University of California-Davis (UC Davis),78093,30358,38.9,61.1,Performer
-23,California State University-Long Beach (CSULB),71355,28019,39.3,60.7,Architect
-24,Soka University of America,504,202,40.1,59.9,Debater
-25,Loyola Marymount University (LMU),18592,8150,43.8,56.2,Caregiver
-26,San Francisco Conservatory of Music,475,226,47.6,52.4,Advocate
-27,California State University-Los Angeles (Cal State LA),33641,16084,47.8,52.2,Mediator
-28,University of San Diego (USD),13755,6697,48.7,51.3,Architect
-29,Santa Clara University (SCU),16300,7958,48.8,51.2,Giver
-30,Vanguard University of Southern California,3976,1966,49.4,50.6,Protector
-31,University of California-Santa Cruz (UC Santa Cruz),55796,28629,51.3,48.7,Inspector
-32,Simpson University (Simpson College),648,339,52.3,47.7,Mediator
-33,California State University-Fullerton (CSUF),50105,26398,52.7,47.3,Thinker
-34,"Pacific Union College (PUC)
-One Angwin Ave",1658,884,53.3,46.7,Architect
-35,"Charles R Drew University of Medicine and Science (CDU)
-1731 E 120th St",320,173,54.1,45.9,Architect
-36,"California State Polytechnic University-Pomona (Cal Poly Pomona)
-3801 West Temple Avenue",39726,21687,54.6,45.4,Thinker
-37,"University of La Verne
-1950 Third St",6864,3763,54.8,45.2,Architect
-38,"La Sierra University
-4500 Riverwalk Parkway",5399,2980,55.2,44.8,Architect
-39,"Chapman University
-One University Dr.",14273,7943,55.7,44.3,Thinker
-40,"San Diego Christian College
-200 Riverview Parkway",329,184,55.9,44.1,Architect
-41,"University of California-Riverside (UCR)
-900 University Ave",49515,27984,56.5,43.5,Thinker
-42,"Whittier College
-13406 E Philadelphia Street",7233,4131,57.1,42.9,Performer
-43,"California State University-Fresno (Fresno State)
-5241 N Maple Ave",18123,10501,57.9,42.1,Artist
-44,"California State University-Northridge (CSUN)
-18111 Nordhoff St",30661,18194,59.3,40.7,Thinker
-45,"California State University-San Marcos (CSUSM)
-333 S Twin Oaks Valley Rd",17349,10699,61.7,38.3,Director
-46,"Menlo College
-1000 El Camino Real",3039,1906,62.7,37.3,Champion
-47,"Holy Names University
-3500 Mountain Blvd",2441,1544,63.3,36.7,Inspector
-48,"San Jose State University (SJSU)
-One Washington Square",35307,22446,63.6,36.4,Commander
-49,"University of San Francisco (USF)
-2130 Fulton St",21867,14086,64.4,35.6,Architect
-50,"Westmont College
-955 La Paz Rd",3074,1992,64.8,35.2,Advocate
-51,"William Jessup University (San Jose Christian College)
-2121 University Avenue",775,504,65,35,Advocate
-52,"University of the Pacific (UOP)
-3601 Pacific Ave",13096,8592,65.6,34.4,Director
-53,"Fresno Pacific University
-1717 S Chestnut Ave",964,637,66.1,33.9,Giver
-54,"Woodbury University
-7500 Glenoaks Blvd",1907,1265,66.3,33.7,Architect
-55,"The Master's College and Seminary
-21726 Placerita Canyon Road",660,443,67.1,32.9,Crafter
-56,"San Francisco State University (SFSU)
-1600 Holloway Ave",34629,23307,67.3,32.7,Giver
-57,"Azusa Pacific University (APU)
-901 E Alosta",8190,5528,67.5,32.5,Inspector
-58,"California State University-San Bernardino (CSUSB)
-5500 University Parkway",16311,11183,68.6,31.4,Mediator
-59,"Biola University
-13800 Biola Ave",4216,2945,69.9,30.1,Debater
-60,"Concordia University-Irvine (Concordia University Irvine)
-1530 Concordia West",3727,2639,70.8,29.2,Mediator
-61,"Art Center College of Design
-1700 Lida St",1015,719,70.8,29.2,Giver
-62,"California Lutheran University (CLU)
-60 W Olsen Rd",6175,4410,71.4,28.6,Artist
-63,"University of California-Merced (UCM)
-5200 North Lake Road",25424,18294,72,28,Advocate
-64,"California State University-Chico
-First and Normal Sts",25908,18740,72.3,27.7,Caregiver
-65,"John Paul the Great Catholic University
-155 W. Grand Ave",350,255,72.9,27.1,Advocate
-66,"Point Loma Nazarene University (PLNU)
-3900 Lomaland Dr",3277,2414,73.7,26.3,Advocate
-67,"California State University-Monterey Bay (CSUMB)
-100 Campus Center",12327,9280,75.3,24.7,Protector
-68,"Mills College
-5000 MacArthur Blvd",1064,807,75.8,24.2,Architect
-69,"University of Redlands
-1200 E. Colton Ave",4621,3531,76.4,23.6,Crafter
-70,"California State University-East Bay (CSUEB)
-25800 Carlos Bee Blvd",16195,12338,76.2,23.8,Thinker
-71,"California Maritime Academy (CMA)
-200 Maritime Academy Dr",1421,1083,76.2,23.8,Advocate
-72,"California State University-Dominguez Hills (CSUDH)
-1000 E Victoria St",20864,16066,77,23,Champion
-73,"Otis College of Art and Design (Otis Art Institute)
-9045 Lincoln Blvd",2442,1909,78.2,21.8,Advocate
-74,"California Baptist University (CBU)
-8432 Magnolia Ave",8241,6451,78.3,21.7,Inspector
-75,"Thomas Aquinas College
-10",204,161,78.9,21.1,Commander
-76,"California State University-Bakersfield (CSUB)
-9001 Stockdale Hwy",12935,10440,80.7,19.3,Thinker
-77,"Laguna College of Art and Design
-2222 Laguna Canyon Rd",431,349,81,19,Inspector
-78,"Saint Marys College of California (SMC)
-1928 Saint Marys Road",6069,4916,81,19,Giver
-79,"California State University-Sacramento (Sacramento State)
-6000 J St",27576,22685,82.3,17.7,Caregiver
-80,"California College of the Arts (CCA)
-1111 Eighth Street",2578,2192,85,15,Performer
-81,"California State University-Channel Islands (CI)
-One University Dr",11894,10204,85.8,14.2,Inspector
-82,"California State University-Stanislaus (CSU Stanislaus)
-One University Circle",8764,7825,89.3,10.7,Director
-83,"Mount St. Mary's College
-12001 Chalon Rd",2165,1941,89.7,10.3,Crafter
-84,"San Francisco Art Institute
-800 Chestnut St",269,243,90.3,9.7,Debater
-85,"Sonoma State University (SSU)
-1801 E Cotati Ave",15094,13764,91.2,8.8,Inspector
-86,"Dominican University of California (DUofC)
-50 Acacia Ave",2033,1857,91.3,8.7,Caregiver
-87,"Humboldt State University (HSU)
-1 Harpst Street",15178,13989,92.2,7.8,Mediator
-88,"Notre Dame de Namur University (NDNU)
-",1810,1809,99.9,0.1,Mediator
+1,Stanford University,47498,2062,4.3,95.7,Humanitarian
+2,Pacific Oaks College,333,17,5.1,94.9,Humanitarian
+3,California Institute of Technology (Caltech),8367,537,6.4,93.6,Pragmatic
+4,Pomona College,10401,770,7.4,92.6,Pragmatic
+5,Claremont McKenna College,6066,625,10.3,89.7,Humanitarian
+6,University of Southern California (USC),66198,7558,11.4,88.6,Pragmatic
+7,University of California-Los Angeles (UCLA),111321,13720,12.3,87.7,Artistic
+8,The Chicago School of Professional Psychology at Los Angeles,207,27,13,87,Nerd
+9,Harvey Mudd College (HMC),4045,553,13.7,86.3,Pragmatic
+10,Pitzer College],4415,605,13.7,86.3,Artistic
+11,University of California-Berkeley (UC Berkeley),87397,14278,16.3,83.7,Artistic
+12,California Institute of the Arts (CalArts),2267,573,25.3,74.7,Humanitarian
+13,University of California-Irvine (UCI),95565,25360,26.5,73.5,Nerd
+14,California Polytechnic State University-San Luis Obispo (Cal Poly),54072,15366,28.4,71.6,Nerd
+15,University of California-Santa Barbara (UCSB),93446,27626,29.6,70.4,Humanitarian
+16,University of California-San Diego (UCSD),99114,31200,31.5,68.5,Pragmatic
+17,Pepperdine University],12764,4049,31.7,68.3,Pragmatic
+18,Scripps College,3022,967,32,68,Humanitarian
+19,San Diego State University (SDSU),70048,23905,34.1,65.9,Humanitarian
+20,Occidental College (OXY),7501,2752,36.7,63.3,Nerd
+21,Hope International University (Hope),685,252,36.8,63.2,Artistic
+22,University of California-Davis (UC Davis),78093,30358,38.9,61.1,Humanitarian
+23,California State University-Long Beach (CSULB),71355,28019,39.3,60.7,Humanitarian
+24,Soka University of America,504,202,40.1,59.9,Humanitarian
+25,Loyola Marymount University (LMU),18592,8150,43.8,56.2,Pragmatic
+26,San Francisco Conservatory of Music,475,226,47.6,52.4,Humanitarian
+27,California State University-Los Angeles (Cal State LA),33641,16084,47.8,52.2,Pragmatic
+28,University of San Diego (USD),13755,6697,48.7,51.3,Artistic
+29,Santa Clara University (SCU),16300,7958,48.8,51.2,Artistic
+30,Vanguard University of Southern California,3976,1966,49.4,50.6,Nerd
+31,University of California-Santa Cruz (UC Santa Cruz),55796,28629,51.3,48.7,Humanitarian
+32,Simpson University (Simpson College),648,339,52.3,47.7,Nerd
+33,California State University-Fullerton (CSUF),50105,26398,52.7,47.3,Pragmatic
+34,Pacific Union College (PUC),1658,884,53.3,46.7,Humanitarian
+35,Charles R Drew University of Medicine and Science (CDU),320,173,54.1,45.9,Nerd
+36,California State Polytechnic University-Pomona (Cal Poly Pomona),39726,21687,54.6,45.4,Artistic
+37,University of La Verne,6864,3763,54.8,45.2,Artistic
+38,La Sierra University,5399,2980,55.2,44.8,Artistic
+39,Chapman University,14273,7943,55.7,44.3,Humanitarian
+40,San Diego Christian College,329,184,55.9,44.1,Artistic
+41,University of California-Riverside (UCR),49515,27984,56.5,43.5,Nerd
+42,Whittier College,7233,4131,57.1,42.9,Pragmatic
+43,California State University-Fresno (Fresno State),18123,10501,57.9,42.1,Humanitarian
+44,California State University-Northridge (CSUN),30661,18194,59.3,40.7,Pragmatic
+45,California State University-San Marcos (CSUSM),17349,10699,61.7,38.3,Artistic
+46,Menlo College,3039,1906,62.7,37.3,Artistic
+47,Holy Names University,2441,1544,63.3,36.7,Artistic
+48,San Jose State University (SJSU),35307,22446,63.6,36.4,Artistic
+49,University of San Francisco (USF),21867,14086,64.4,35.6,Artistic
+50,Westmont College,3074,1992,64.8,35.2,Humanitarian
+51,William Jessup University (San Jose Christian College),775,504,65,35,Pragmatic
+52,University of the Pacific (UOP),13096,8592,65.6,34.4,Nerd
+53,Fresno Pacific University,964,637,66.1,33.9,Pragmatic
+54,Woodbury University,1907,1265,66.3,33.7,Humanitarian
+55,The Master's College and Seminary,660,443,67.1,32.9,Pragmatic
+56,San Francisco State University (SFSU),34629,23307,67.3,32.7,Artistic
+57,Azusa Pacific University (APU),8190,5528,67.5,32.5,Artistic
+58,California State University-San Bernardino (CSUSB),16311,11183,68.6,31.4,Pragmatic
+59,Biola University,4216,2945,69.9,30.1,Humanitarian
+60,Concordia University-Irvine (Concordia University Irvine),3727,2639,70.8,29.2,Humanitarian
+61,Art Center College of Design,1015,719,70.8,29.2,Nerd
+62,California Lutheran University (CLU),6175,4410,71.4,28.6,Pragmatic
+63,University of California-Merced (UCM),25424,18294,72,28,Humanitarian
+64,California State University-Chico,25908,18740,72.3,27.7,Humanitarian
+65,John Paul the Great Catholic University,350,255,72.9,27.1,Artistic
+66,Point Loma Nazarene University (PLNU),3277,2414,73.7,26.3,Pragmatic
+67,California State University-Monterey Bay (CSUMB),12327,9280,75.3,24.7,Nerd
+68,Mills College,1064,807,75.8,24.2,Nerd
+69,University of Redlands,4621,3531,76.4,23.6,Humanitarian
+70,California State University-East Bay (CSUEB),16195,12338,76.2,23.8,Pragmatic
+71,California Maritime Academy (CMA),1421,1083,76.2,23.8,Artistic
+72,California State University-Dominguez Hills (CSUDH),20864,16066,77,23,Humanitarian
+73,Otis College of Art and Design (Otis Art Institute),2442,1909,78.2,21.8,Pragmatic
+74,California Baptist University (CBU),8241,6451,78.3,21.7,Artistic
+75,Thomas Aquinas College,204,161,78.9,21.1,Humanitarian
+76,California State University-Bakersfield (CSUB),12935,10440,80.7,19.3,Pragmatic
+77,Laguna College of Art and Design,431,349,81,19,Nerd
+78,Saint Marys College of California (SMC),6069,4916,81,19,Nerd
+79,California State University-Sacramento (Sacramento State),27576,22685,82.3,17.7,Nerd
+80,California College of the Arts (CCA),2578,2192,85,15,Pragmatic
+81,California State University-Channel Islands (CI),11894,10204,85.8,14.2,Artistic
+82,California State University-Stanislaus (CSU Stanislaus),8764,7825,89.3,10.7,Humanitarian
+83,Mount St. Mary's College,2165,1941,89.7,10.3,Humanitarian
+84,San Francisco Art Institute,269,243,90.3,9.7,Pragmatic
+85,Sonoma State University (SSU),15094,13764,91.2,8.8,Nerd
+86,Dominican University of California (DUofC),2033,1857,91.3,8.7,Pragmatic
+87,Humboldt State University (HSU),15178,13989,92.2,7.8,Artistic
+88,Notre Dame de Namur University (NDNU),1810,1809,99.9,0.1,Artistic
