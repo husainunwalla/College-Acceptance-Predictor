@@ -1,7 +1,7 @@
 {% extends "base.html" %}
 {% block content %}
 <div class="formbg-outer">
-    <div class="formbg" style="width: 100%;max-width: 448px;">
+    <div class="formbg">
         <div class="formbg-inner padding-horizontal--48">
             <span class="padding-bottom--15">Hi {{g.user.username}}, Choose your Option</span>
             <form id="home" method="post">
@@ -9,7 +9,7 @@
                     <div class="field padding-bottom--24">
                         <input type="submit" name="Form" value="Go to Form">
                     </div>
-                    <div class="field padding-bottom--24">
+                    <div class="field">
                         <input type="submit" name="Form" value="Go to Personality test">
                     </div>
                 </div>
